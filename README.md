@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class VacationRoute {
     public static List<String> findRoute(String[] tickets) {
         // Create a graph representation of the available tickets
@@ -11,7 +10,6 @@ public class VacationRoute {
             graph.putIfAbsent(fromCity, new ArrayList<>());
             graph.get(fromCity).add(toCity);
         }
-
         // Initialize variables
         String startCity = "Kiev"; // Your son started in Kiev
         Set<String> visited = new HashSet<>();
